@@ -1,0 +1,307 @@
+body {
+    background-color:#ffffff;
+}
+
+p {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* adding a dark pink background to the top navigation style */
+.topnav {
+    background-color:#aa5e79;
+    overflow: hidden;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  
+  /* style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 12px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* change the colour of links on hover */
+  .topnav a:hover {
+    background-color: #ffffff;
+    color:#aa5e79;
+  }
+
+  /* add the inverted colour to the active/current link */
+  .topnav a.active {
+    background-color: #555;
+    color: white;
+  }
+
+.layout {
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    content: "";
+    clear: both;
+    display: flex;
+  }
+
+/* designing the buttons on the right*/
+.column1 {
+    position: absolute;
+    top: 100px;
+    bottom: 10px;
+    right: 10px;
+    width : 18%;
+    padding: 10px;
+    text-align: center;
+  }
+  
+.button-row-title {
+    padding: 5%;
+    height: 10%
+}
+
+.button-row {
+    height: 30%;
+    padding: 5%;
+}
+
+.img1 {
+    height: 100%;
+    width: 95%;
+    border-radius: 10px;
+    border: 3px solid #aa5e79;
+ }
+
+.hide {
+    display: none;
+    line-height: normal;
+}
+
+.img1:hover {
+    opacity: 0.5;
+    transition:opacity 0.5s;
+    border: 3px solid #8b88b6;
+    border-radius: 10px;
+}
+
+.img1:hover + .hide {
+    display: block;
+    color:#8b88b6;
+}
+
+/*-------------*/
+
+h1 {
+    font-size: 30px;
+    line-height: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+    padding: 27px;
+    font-family: "Garamond";
+    color:#555;
+}
+
+h2 {
+    font-size: 20px;
+    line-height: 20px;
+    margin-bottom: 10px;
+    font-family: "Garamond";
+    color: #8b88b6;
+  }
+
+.index-text {
+    position: absolute;
+    top: 120px;
+    bottom: 20px;
+    left: 10px;
+    width : 80%;
+    border: 3px solid #aa5e79;
+    padding: 20px;
+}
+/* this section is used to create the legend */
+
+ /*-------------------------------------------------------------------*/
+
+ .legend {
+    position: absolute;
+    display : none;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 3px;
+    margin-bottom: 30px;
+    font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    padding: 10px;
+    left: 30px;
+    width: 260px;
+    bottom: 20px;
+    z-index: 1;
+  }
+  
+  .row { /*styling for the legend colourbar display*/
+    margin-left: 20px;
+    height: 12px;
+    width: 80%;
+    margin-bottom: 10px;
+  }
+
+  .row2 { /*styling for the time display*/
+    margin-left: 10px;
+  }
+  
+  .colors {
+    background: linear-gradient(to right, #2dc4b2, #3bb3c3, #669ec4, #8b88b6, #a2719b, #aa5e79);
+    margin-bottom: 5px;
+  }
+  
+  .label {
+    width: 15%;
+    display: inline-block;
+    text-align: center;
+  }
+
+ /*-------------------------------------------------------------------*/
+
+ /* this section is used to create the slider panel */
+
+ /*-------------------------------------------------------------------*/
+  
+.sliderbar {
+    position: absolute;
+    display : none;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 3px;
+    font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    padding: 10px;
+    left: 30px;
+    width: 260px;
+    bottom: 150px;
+    z-index: 1;
+  }
+
+ /*-------------------------------------------------------------------*/
+
+ /* this section is used to create the 2 containers on the left */
+
+ /*-------------------------------------------------------------------*/
+
+.map-data-container {
+    position: absolute;
+    font: 14px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    background: rgba(255, 255, 255, 0.8);
+    width: 260px;
+    top: 140px;
+    left: 30px;
+    margin-top: 10px;
+    padding: 10px;
+    overflow: visible;
+}
+
+.map-data-container2 {
+    position: absolute;
+    font: 14px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    background: rgba(255, 255, 255, 0.8);
+    width: 260px;
+    top: 280px;
+    left: 30px;
+    margin-top: 10px;
+    padding: 10px;
+    overflow: visible;
+}
+
+form {
+    padding-bottom: 20px;
+}
+ /*-------------------------------------------------------------------*/
+
+  /* styling the "Return to full extent" button */
+#returnbutton {
+    position: absolute;
+    background-color:#aa5e79;
+    border : none;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 15px 32px;
+    color: white;
+    margin-top: 10px;
+    padding: 10px;
+    left: 30px;
+    top: 380px;
+    width: 8%;
+  }
+
+/*
+popup info box
+*/
+.map-data-container3 {
+    display: none;
+    position: absolute;
+    font: 14px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    background: rgba(255, 255, 255, 0.8);
+    width: 260px;
+    margin-top: 10px;
+    top:140px;
+    left: 300px;
+    padding: 10px;
+    overflow: visible;
+}
+
+.infobox-image{
+    font: 14px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    background: rgba(255, 255, 255, 0.8);
+    width: 240px;
+}
+
+ /*-------------------------------------------------------------------*/
+
+ /* this section is to design the species webpages
+
+ /*-------------------------------------------------------------------*/
+
+.box {
+  position: absolute;
+  top: 120px;
+  left: 150px;
+  right: 150px;
+  border: 3px solid #aa5e79;
+  padding: 2%;
+}
+
+.box-row {
+  height: 380px;
+}
+
+.box-left-txt {
+  float: left;
+  padding: 30px;
+  padding-left: 60px;
+  width : 60%;
+  text-align: right;
+}
+
+.box-right-txt {
+  float: right;
+  padding: 30px;
+  padding-right: 60px;
+  width : 60%;
+  text-align: left;
+}
+
+.box-left {
+  float: left;
+  width: 38%;
+  overflow: hidden;
+  text-align: center;
+}
+.box-right {
+  float: right;
+  width: 38%;
+  overflow: hidden;
+  text-align: center;
+  
+}
+
+.box-img {
+  height: 300px;
+}
+
+figcaption {
+  text-align: center;
+}
