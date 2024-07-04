@@ -272,7 +272,7 @@ popup info box
   float: left;
   padding: 30px;
   padding-left: 60px;
-  width : 70%;
+  width : 60%;
   text-align: right;
 }
 
@@ -292,7 +292,7 @@ popup info box
 }
 .box-right {
   float: right;
-  width: 30%;
+  width: 38%;
   overflow: hidden;
   text-align: center;
   
